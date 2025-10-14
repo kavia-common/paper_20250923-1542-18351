@@ -1,0 +1,9 @@
+[
+  {
+    "id": "dGVzdHVzZXJAZXhhbXBsZS5jb20",
+    "email": "testuser@example.com",
+    "name": "Test User",
+    "passwordHash": "$2a$10$8tFBVsupXm/RiqlINc8MpOo92o8pIOTgRgvpPKUBiM5u.8t7eKwCS",
+    "createdAt": "2025-10-14T06:40:01.146Z"
+  }
+]
