@@ -3,6 +3,10 @@ const express = require('express');
 const routes = require('./routes');
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('../swagger');
+require('dotenv').config();
+
+const authRouter = require('./../src/auth/auth.routes');
+const secureRouter = require('./../src/secure/secure.routes');
 
 // Initialize express app
 const app = express();
@@ -43,6 +47,8 @@ app.use(express.json());
 
 // Mount routes
 app.use('/', routes);
+app.use('/api/auth', authRouter);
+app.use('/api/secure', secureRouter);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
