@@ -102,3 +102,112 @@
     font-size: 12px;
   }
 }
+
+/* -------- Auth / Login page styles -------- */
+
+.auth-card {
+  width: min(92vw, 420px);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+[data-theme="dark"] .auth-card {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.auth-title {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.auth-subtitle {
+  margin: 10px 0 18px;
+  color: var(--text-primary);
+  opacity: 0.75;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.auth-alert {
+  margin: 0 0 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(220, 53, 69, 0.35);
+  background: rgba(220, 53, 69, 0.12);
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.auth-input {
+  height: 42px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-input:focus {
+  border-color: rgba(97, 218, 251, 0.7);
+  box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.18);
+}
+
+.auth-error {
+  color: #dc3545;
+  font-size: 13px;
+}
+
+.auth-button {
+  height: 44px;
+  margin-top: 6px;
+  border-radius: 10px;
+  border: none;
+  background: var(--button-bg);
+  color: var(--button-text);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.05s ease, opacity 0.2s ease;
+}
+
+.auth-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.auth-button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.auth-footnote {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--text-primary);
+  opacity: 0.65;
+}
